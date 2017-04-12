@@ -1,0 +1,21 @@
+ 1. At each time point in a video, we pass the corresponding video 
+ 	frame through a CNN.
+ 2. The CNN has 3 convolutional layers consisting of 64, 128, and 256 	
+ 	filters re- spectively, each of size 5x5.
+ 3. The first two convolutional layers are followed by 2x2 max pooling while the third 
+ 	layer is fol- lowed by quadrant pooling.
+ 4. a fully-connected layer with 300 hidden units.
+ 5. a linear re- gression layer to estimate the valence label
+
+
+ Cost function : mean squared error (MSE) 
+
+ SGD : batch 128 , 
+ momentum : 0.9 
+ weight decay of 1e-5. We used a constant learning of 0.01 and 
+ did not use any form of annealing.
+
+
+ training using :  anna software library
+
+ 
